@@ -22,10 +22,10 @@ services:
       - ./log/supervisor/:/var/log/supervisor/:rw
     command: supervisord -n
     expose:
-       - "9000"
+      - "9000"
     networks:
-       - backend
-       - front
+      - backend
+      - front
   mysql:
     image: mysql:5.7
     restart: always
