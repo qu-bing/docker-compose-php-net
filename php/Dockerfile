@@ -1,6 +1,6 @@
-FROM php:7.4-fpm
+FROM php:7.2-fpm
 # 更新安装依赖包和PHP核心拓展
-RUN apt-get update && apt-get install -y \
+RUN apt-get update --fix-missing && apt-get install -y \
        git \
        libfreetype6-dev \
        libjpeg62-turbo-dev \
